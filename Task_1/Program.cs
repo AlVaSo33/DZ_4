@@ -1,15 +1,12 @@
 ﻿// Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 //3, 5 -> 243 (3⁵)
 //2, 4 -> 16
-
-Console.WriteLine("Программа которая возводит число А в степень В");
-
+Console.WriteLine("Программа которая возводит число А в натуральную степень В");
 Console.WriteLine("Введите число А");
 int numberA = int.Parse(Console.ReadLine()!);
 
 Console.WriteLine("Введите число B");
 int numberB = int.Parse(Console.ReadLine()!);
-
 
 void Exponentiation()
 {
@@ -27,18 +24,9 @@ void Exponentiation()
         }
         Console.WriteLine("Результат " + numberA + " ^ " + numberB + " = " + result);
     }
-
-    // Для отрицательной степени
-
-    else
-    {
-        while (count != numberB)
-        {
-            result = result * numberA;
-            count--;
-        }
-        Console.WriteLine("Результат " + numberA + " ^ " + numberB + " = " + (1 / result));
-    }
 }
-
 Exponentiation();
+
+
+
+

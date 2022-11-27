@@ -2,9 +2,7 @@
 //452 -> 11
 //82 -> 10
 //9012 -> 12
-
-
-
+Console.WriteLine("Программа которая принимает на вход число и выдаёт сумму цифр в числе");
 Console.Write("Введите число: ");
 int input = int.Parse(Console.ReadLine()!);
 
@@ -18,15 +16,14 @@ int GetSumOfDigits(int input)
     }
     return result;
 }
-
 if (input >= 0)
 {
     GetSumOfDigits(input);
-
-} else {
+} 
+else 
+{
     input *= -1;
     GetSumOfDigits(input);
-    
 }
 Console.Write("Сумма цифр введенного числа = " + GetSumOfDigits(input));
 
